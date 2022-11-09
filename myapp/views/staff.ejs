@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Staff</title>
+</head>
+<body>
+    <%- include ('../partials/head.ejs') %>
+    <h1>Staff Members</h1>
+    <ul class="links">
+        <%for (let i = 0; i < staff.length; i++) { %>
+            <li class="links"><%=staff[i].name%> is our <%=staff[i].position%>
+            <img class="image" src="<%=staff[i].image%>"/>
+            </li>
+        <%}%>
+    </ul>
+</body>
+<%- include ('../partials/footer.ejs') %>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+</head>
+<body>
+<%- include ('../partials/head.ejs') %>
+    <div>
+        <h4>CHECK US OUT!</h4>
+        <ul class="homeul" >
+            <li>
+                <a href="./staff">
+                    OUR STAFF
+                    <br>
+                    <img src="https://149827768.v2.pressablecdn.com/wp-content/uploads/2021/12/what-kind-of-teachers-are-in-demand-290x253-1.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a href="./pastwork">
+                    ALUMNI
+                    <br>
+                    <img src="https://wp-media.petersons.com/blog/wp-content/uploads/2019/07/11154102/iStock-1145183123.jpg"/>
+                </a>
+            </li>
+            <li><a href="./links">
+                FUN LINKS
+                <br>
+                <img src="https://www.mydomaine.com/thmb/QXs8VZbAMKbcdiNYEDiojVxOkv8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cdn.cliqueinc.com__cache__posts__253245__most-beautiful-flowers-253245-1522430326665-main.700x0c-e023cc94a56b48f5afb963df0866a4a2.jpg"/>
+            </a></li>
+            <li><a href="./companyhistory">
+                HISTORY
+                <br>
+                <img src="https://www.thinkwood.com/wp-content/uploads/2020/08/01-franklin-elementary-exterior.jpg"/>
+            </a></li>
+            <li><a href="./contact">
+                CONTACT
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0jVz1ydcmjJ6JEmpfPKaykGy0xeEFGMyXCLern3md4NsuKb8Yc1Txm6LxZwuW5arBrE&usqp=CAU"/>
+            </a></li>
+        </ul>
+        <%-include('../partials/footer.ejs') %>
+</body>
+</html>
