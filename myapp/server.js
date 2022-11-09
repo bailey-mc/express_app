@@ -7,9 +7,9 @@ if(process.env.PORT){
 	PORT = process.env.PORT
 }
 
-app.get('/', (req, res)=>{
-	res.render('home.ejs');
-})
+// app.get('/', (req, res)=>{
+// 	res.send('hi');
+// })
 
 app.listen(PORT, ()=>{
 	console.log('listening');
@@ -21,7 +21,11 @@ const ourLinks = require('./models/links.js')
 
 app.use(express.static('public'));
 
-app.get('/home', (req, res) => {
+// app.get('/', (req, res) => {
+//     res.render('home.ejs');
+// });
+
+app.get('/', (req, res) => {
     res.render('home.ejs');
 });
 
